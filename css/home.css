@@ -1,0 +1,72 @@
+header {
+    background-color: #266fbd;
+    width: 100%;
+    height: 70px
+}
+
+svg {
+    width: 20px;
+    height: 15px;
+}
+
+.template {
+    padding: 15px;
+}
+
+.template .btn-primary {
+    background-color: #266fbd;
+    border: none;
+}
+
+p {
+    float: right;
+}
+
+
+/*bienvenido*/
+
+.container {
+    padding: 40px;
+}
+
+h1 {
+    color: #faa200;
+    padding-left: 50px;
+}
+
+h2 {
+    color: #ebeff3;
+    padding-left: 130px;
+}
+
+label {
+    color: #ebeff3;
+    padding-left: 35px;
+}
+
+span {
+    color: #ebeff3;
+    padding-left: 55px;
+}
+
+.container {
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(58, 39, 230);
+}
+
+.btn-info {
+    background-color: #233d57;
+    color: white;
+    margin-left: 105px;
+    margin-top: 15px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    border-top: brown;
+    background-color: none;
+    border-radius: 100%;
+}

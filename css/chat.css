@@ -1,0 +1,278 @@
+html {
+    background-image: url(../public/fondo.jpg);
+    padding: 8px;
+}
+
+body {
+    background: pink;
+    width: 1200px;
+    height: 580px;
+    margin: auto;
+}
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+.messages-box,
+.chat-box {
+    height: 510px;
+    overflow-y: scroll;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+header {
+    height: 65px;
+    width: 1200px;
+    background: white;
+}
+
+.menu {
+    height: 65px;
+    width: 420px;
+    background: #DCDCDC;
+    float: left;
+    border: 0px solid #c0c0c0;
+}
+
+.seccion-Perfil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 7px 20px;
+}
+
+.men {
+    height: 65px;
+    width: 780px;
+    background: #DCDCDC;
+    float: right;
+    border: 0.1px solid #c0c0c0;
+}
+
+.seccion-chat {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 7px 20px;
+}
+
+.usuario-seleccionado {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+}
+
+.usuario-seleccionado .cuerpo span {
+    display: block;
+}
+
+.men .usuario-seleccionado a.btn,
+svg.bi bi-three-dots-vertical {
+    width: 40px;
+    height: 40px;
+    margin-right: .0.5rem;
+    padding: 10px;
+    background-color: #DCDCDC;
+    border: 0;
+    color: #696969;
+    border-radius: 40px;
+}
+
+.action_menu {
+    z-index: 1;
+    position: absolute;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    top: 30px;
+    right: 15px;
+    display: none;
+}
+
+.action_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 515px;
+    width: 420px;
+    background: blue;
+    float: left;
+    border: 0.1px solid #c0c0c0;
+}
+
+.buscador {
+    height: 50px;
+    width: 420px;
+    background: #F5F5F5;
+}
+
+.input-buscar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 5.5px
+}
+
+.seccion-buscar input[type="search"] {
+    display: block;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 2rem;
+}
+
+.seccion-buscar i {
+    position: absolute;
+    right: 15px;
+}
+
+.mensaje {
+    height: 465px;
+    width: 420px;
+    background: #FFFFFF;
+    border: 0.1px solid #c0c0c0;
+    overflow-y: scroll;
+}
+
+.seccion-lista-usuarios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.usuario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.mensaje .avatar,
+.usuario-seleccionado .avatar,
+.usuario .avatar img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    position: relative;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+}
+
+.usuario .cuerpo span {
+    display: block;
+}
+
+nav {
+    height: 515px;
+    width: 780px;
+    background: purple;
+    float: left;
+}
+
+.mens {
+    height: 450px;
+    width: 780px;
+    background: #F5F5F5;
+    border: 0.1px solid #c0c0c0;
+    overflow-y: scroll;
+}
+
+.received_withd_msg p {
+    background: #3399FF none repeat scroll 0 0;
+    border-radius: 0 15px 15px 15px;
+    color: #000000;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.received_withd_msg {
+    width: 40%;
+}
+
+.mesgs {
+    padding: 10px 50px;
+}
+
+.sent_msg p {
+    background: #FFFFFF;
+    border-radius: 12px 15px 15px 0;
+    font-size: 14px;
+    margin: 0;
+    color: #000000;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.sent_msg {
+    float: right;
+    width: 40%;
+    padding: 5px 0;
+}
+
+.mas {
+    height: 65px;
+    width: 780px;
+    background: #DCDCDC;
+    border: 0.1px solid #c0c0c0;
+}
+
+.panel-escritura .textarea textarea,
+.usuario-seleccionado .cuerpo {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.panel-escritura .textarea {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.3rem;
+}
+
+.panel-escritura .textarea textarea,
+.panel-escritura .opcines {
+    margin-right: .1rem;
+}
+
+.panel-escritura a.btn,
+svg.bi bi-emoji-smile,
+svg.bi bi-link-45deg {
+    width: 20px;
+    height: 20px;
+    margin-right: .0.5rem;
+    padding: 10px;
+    background-color: #DCDCDC;
+    border: 0;
+    color: #696969;
+}
+
+.panel-escritura button .btn btn-success {
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.panel-escritura .textarea textarea {
+    border-style: none;
+    background-color: #F3F3F3;
+    border-radius: 40px;
+    padding: 2px 0 5px 20px;
+}
