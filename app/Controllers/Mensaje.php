@@ -21,7 +21,8 @@ class Mensaje extends BaseController
         //var_dump($cursor);
         return view('/mensaje/listar', $cursor);
     }
-    public function chat(){
+    public function chat($id_contacto=0){
+        echo $id_contacto;
         $usuarios = $this->db_mongo->chats->usuario;
         $cursor['user'] = $usuarios->find()->toArray();
         //var_dump($cursor['listar']);
@@ -35,15 +36,19 @@ class Mensaje extends BaseController
 
     public function guardar()
     {
-        $nombre=$_POST['nombre'];
-        $fecha=$_POST['fecha'];
         $mensaje=$_POST['mensaje'];
+        $fecha=$_POST['fecha'];
+        $hora=$_POST['hora'];
+        $remitente=$_POST['id_remitente'];
+        $destinatario=$_POST['id_destinatario'];
 
         $insertResult = $this->db_mongo->chats->mensaje;
         $insertOneResult = $insertResult->insertOne([
-                'nombre' => $nombre,
-                'fecha' => $fecha,
-                'mensaje' => $mensaje,
+            'mensaje' => $mensaje,
+            'fecha' => $fecha,
+            'hora' => $hora,
+            'id_remitente' => $remitente,
+            'id_destinatario' => $remitente,    
             ]
         );
         return redirect()->to(base_url('/mensaje/listar'));
@@ -59,16 +64,16 @@ class Mensaje extends BaseController
     {
         $mensajes = $this->db_mongo->chats->mensaje;
         $cursor['listar'] = $mensajes->findOne(['_id' => (new \MongoDB\BSON\ObjectID($id))]);
-        $cursor['cabecera']=view('/template/cabecera');
-        $cursor['pie']=view('/template/piepagina');
         return view('/mensaje/editar', $cursor);
         
     }
     public function actualizar()
     {
-        $nombre=$_POST['nombre'];
-        $fecha=$_POST['fecha'];
         $mensaje=$_POST['mensaje'];
+        $fecha=$_POST['fecha'];
+        $hora=$_POST['hora'];
+        $remitente=$_POST['id_remitente'];
+        $destinatario=$_POST['id_destinatario'];
         $id=$_POST['_id'];
         //return var_dump($_REQUEST);
         $coleccion = $this->db_mongo->chats->mensaje;
@@ -76,9 +81,11 @@ class Mensaje extends BaseController
         $updateResult  =  $coleccion -> updateOne ( 
             [ '_id'  =>   (new \MongoDB\BSON\ObjectID($id)) ], 
             ['$set'=>[
-                'nombre' => $nombre,
-                'fecha' => $fecha,
-                'mensaje' => $mensaje,
+            'mensaje' => $mensaje,
+            'fecha' => $fecha,
+            'hora' => $hora,
+            'id_remitente' => $remitente,
+            'id_destinatario' => $destinatario,   
             ]]
         );
 

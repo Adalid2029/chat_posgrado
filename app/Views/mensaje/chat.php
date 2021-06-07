@@ -5,8 +5,8 @@
     <title></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="../css/chat.css">
-
+     <script defer src="https://use.fontawesome.com/releases/v5.11.1/js/all.js"></script>
+      <link rel="stylesheet" href="<?=base_url()?>/css/chat.css">
   </head>
   <body>
   <?php
@@ -36,8 +36,8 @@
               </div>
 
             <a type="submit" class="btn btn-secondary">
-             <svg class="bi bi-three-dots-vertical" fill="currentColor"  viewBox="0 0 16 16">
-             <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
+              <i class="fas fa-ellipsis-v">
+              </i>
             </a>
             <div class="action_menu">
             <ul>
@@ -62,7 +62,7 @@
       </section>
       <section class="mensaje">
       <?php foreach($user as $row) : ?>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+            <a href="<?=base_url('/mensaje/chat/'.$row->_id)?>" class="list-group-item list-group-item-action list-group-item-light rounded-0">
               <div class="media"><img src="../public/icono2.jpg"height="50" width="50" class="rounded-circle">
                 <div class="media-body ml-4">
                   <div class="d-flex align-items-center justify-content-between mb-1">
@@ -100,20 +100,19 @@
           <form class="textarea">
               <div class="opcines">
               <a type="submit" class="btn btn-default">
-              <svg class="bi bi-emoji-smile" fill="currentColor"viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
-              </svg>
+                <i class="far fa-smile">
+                </i>
               </a>
-                  <a type="submit" class="btn btn-default">
-                  <svg class="bi bi-link-45deg"fill="currentColor"viewBox="0 0 16 16">
-                  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
-                  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
-                  </svg>
-                  </a>
+              <a type="submit" class="btn btn-default">
+                <i class="fas fa-paperclip">
+                </i>
+              </a>
               </div>
               <textarea type="text"placeholder="Escribir mensaje"></textarea>
-              <button class="btn btn-success" type="submit">enviar</button>
+              <button class="btn btn-primary" type="submit">
+                <i class="fas fa-paper-plane">
+                </i>
+              </button>
 
           </a>
           </form>

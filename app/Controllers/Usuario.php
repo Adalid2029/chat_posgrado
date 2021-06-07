@@ -71,7 +71,7 @@ class Usuario extends BaseController
         $session = session();
         $session->start();
         $session->set('nombre',$nombre);
-        return redirect()->to(base_url('/usuario/home'));
+        return redirect()->to(base_url('/usuario/listar'));
     }
     public function borrar($id = null)
     {

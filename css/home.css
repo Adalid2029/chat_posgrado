@@ -4,7 +4,7 @@ header {
     height: 70px
 }
 
-svg {
+.icono {
     width: 20px;
     height: 15px;
 }
@@ -24,10 +24,6 @@ p {
 
 
 /*bienvenido*/
-
-.container {
-    padding: 40px;
-}
 
 h1 {
     color: #faa200;
@@ -53,20 +49,24 @@ span {
     margin-top: 40px;
     width: 400px;
     height: 400px;
-    background-color: rgb(58, 39, 230);
+    background-color: #18406b;
+    border-radius: 5px;
+    padding: 40px;
 }
 
 .btn-info {
-    background-color: #233d57;
+    background-color: #266fbd;
     color: white;
     margin-left: 105px;
     margin-top: 15px;
 }
 
-img {
-    height: 80px;
-    width: 80px;
-    border-top: brown;
-    background-color: none;
+.card-img img {
+    height: 100px;
+    width: 100px;
     border-radius: 100%;
+    border-style: solid;
+    border-color: #fff;
+    padding: 5px;
+    margin-left: 105px;
 }
