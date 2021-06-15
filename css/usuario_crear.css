@@ -3,6 +3,15 @@ body {
     background-size: cover;
 }
 
+label,
+h3 {
+    color: #180cbb;
+}
+
+.form-check {
+    padding: 5px;
+}
+
 div.col-12 {
     border-radius: 20px;
     background: white;
@@ -22,11 +31,6 @@ header {
 .template .btn-primary {
     background-color: #266fbd;
     border: none;
-}
-
-a {
-    color: white;
-    align-items: center;
 }
 
 p {

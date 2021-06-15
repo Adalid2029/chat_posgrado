@@ -14,6 +14,7 @@
 					<th>Email</th>
 					<th>Password</th>
 					<th>Numero</th>
+					<th>Tipo</th>
 		            <th>acciones</th>
                 </tr>
             </thead>
@@ -23,11 +24,12 @@
 
 foreach ($listar as $usuario):?>
 			<tr>
-			<td><?php echo $usuario->_id;?></td>
+			<td><?php echo $usuario->_id;?></td>	
 			<td> <?php echo $usuario->nombre;?></td>
 			<td> <?php echo $usuario->email;?></td>
 			<td> <?php echo $usuario->password;?></td>
 			<td> <?php echo $usuario->numero;?></td>
+			<td> <?php echo $usuario->tipo;?></td>
 
 			<td> 
 			<a href="editar/<?php echo $usuario->_id?>"class="btn btn-warning" type="button">

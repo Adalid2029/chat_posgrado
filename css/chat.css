@@ -1,6 +1,7 @@
 html {
     background-image: url(../public/fondo.jpg);
-    padding: 35px;
+    background-repeat: no-repeat;
+    padding: 15px;
 }
 
 body {
@@ -12,12 +13,6 @@ body {
 
 .text-small {
     font-size: 0.9rem;
-}
-
-.messages-box,
-.chat-box {
-    height: 510px;
-    overflow-y: scroll;
 }
 
 .rounded-lg {
@@ -189,43 +184,47 @@ nav {
 .mens {
     height: 450px;
     width: 780px;
-    background: #F5F5F5;
+    background-image: url(../public/posgrado.jpg);
+    background-repeat: no-repeat;
+    background-size: 780px 450px;
     border: 0.1px solid #c0c0c0;
     overflow-y: scroll;
 }
 
-.received_withd_msg p {
-    background: #3399FF none repeat scroll 0 0;
-    border-radius: 0 15px 15px 15px;
-    color: #000000;
-    font-size: 14px;
-    margin: 0;
-    padding: 5px 10px 5px 12px;
-    width: 100%;
-}
 
-.received_withd_msg {
-    width: 40%;
-}
-
-.mesgs {
-    padding: 10px 50px;
-}
+/*emisor*/
 
 .sent_msg p {
-    background: #FFFFFF;
-    border-radius: 12px 15px 15px 0;
+    background: rgba(14, 64, 243, 0.6) repeat scroll 0 0;
+    border-radius: 15px 15px 0 12px;
     font-size: 14px;
-    margin: 0;
     color: #000000;
-    padding: 5px 10px 5px 12px;
-    width: 100%;
+    padding: 5px 20px 10px 12px;
 }
 
 .sent_msg {
-    float: right;
-    width: 40%;
-    padding: 5px 0;
+    padding: 0 300px;
+    /* margin-bottom: 0%;*/
+    width: 950px;
+}
+
+
+/*receptor*/
+
+.received_withd_msg p {
+    background: rgb(248, 193, 130);
+    border-radius: 0 15px 15px 15px;
+    color: #000000;
+    font-size: 14px;
+    padding: 5px 10px 5px 12px;
+}
+
+.received_withd_msg {
+    width: 300px;
+}
+
+.mesgs {
+    padding: 5px 50px;
 }
 
 .mas {

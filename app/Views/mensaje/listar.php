@@ -13,8 +13,7 @@
                     <th>Mensaje</th>
 					<th>Date</th>
 					<th>Time</th>
-					<th>Remitente</th>
-					<th>Destinatario</th>
+			
 		            <th>acciones</th>
                 </tr>
             </thead>
@@ -23,10 +22,9 @@
 			<tr>
 			<td> <?php echo $mensaje->_id;?></td>
 			<td> <?php echo $mensaje->mensaje;?></td>
-			<td> <?php echo $mensaje->fecha;?></td>
 			<td> <?php echo $mensaje->hora;?></td>
-			<td> <?php echo $mensaje->id_remitente;?></td>
-			<td> <?php echo $mensaje->id_destinatario;?></td>
+			<td> <?php echo $mensaje->fecha;?></td>	
+			
 			<td> 
 			<a href="editar/<?php echo $mensaje->_id?>"class="btn btn-warning" type="button">
 			<i class="fas fa-pencil-alt"style="color:#fff"></i>

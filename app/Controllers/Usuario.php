@@ -51,12 +51,30 @@ class Usuario extends BaseController
 
     public function guardar()
     {
-
+        $validacion=$this->validate([
+            'nombre'=>'required|min_length[3]',
+            'email' => 'required',
+            'password' => 'required|min_length[8]',
+            'numero' => 'required|min_length[8]',
+            
+            
+        ]); 
+//validaciones
+        if(!$validacion){
+            $session=session();
+            $session->setFlashdata('mensaje','Revisar la informacion llenado por favor');
+            return redirect()->back()->withInput();
+          
+        } 
         $nombre =ucfirst($_POST['nombre']);
         $email =$_POST['email'];
         $password =$_POST['password'];
         $telefono = $_POST['numero'];
-
+        $tipo = isset($_POST['tipo'])? $_POST['tipo']:2;
+        
+  
+       
+     
         if (!$this->existe_email($email)) {
             $insertResult = $this->db_mongo->chats->usuario;
             $insertOneResult = $insertResult->insertOne(
@@ -64,15 +82,19 @@ class Usuario extends BaseController
                     'nombre' => $nombre,
                     'email' => $email,
                     'password' => $password,
+                    'tipo'=>$tipo,
                     'numero' => $telefono,
+                  
                 ]
             );
         } 
         $session = session();
         $session->start();
         $session->set('nombre',$nombre);
-        return redirect()->to(base_url('/usuario/listar'));
+        
+        return redirect()->to(base_url('/usuario/home'));
     }
+    
     public function borrar($id = null)
     {
         // $usuario = new Model_user();

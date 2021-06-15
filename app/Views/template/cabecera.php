@@ -25,11 +25,7 @@
             <a class="nav-link" href="<?= base_url('/mensaje/chat')?>">Mensage</a>
           </li>
         </ul>
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('/usuario/home')?>">home</a>
-          </li>
-        </ul>
+       
         <ul class="navbar-nav my-2 my-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url('/usuario/listar')?>">Usuario</a>
@@ -46,13 +42,7 @@
             <a class="nav-link" href="<?=base_url('/notification/listar')?>">Notificacion</a>
           </li>
         </ul>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item  'active' : null) ?>">
-            <a class="nav-link" href="<?=base_url('/usuario/administra')?>">administra</a>
-          </li>
-        </ul>
-        
-      
+              
       </div>
       </div>
     </nav>
