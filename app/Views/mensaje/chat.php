@@ -90,7 +90,7 @@
                   <!-- llenar datos  -->
                   <div class="outgoing_msg">
                     <div class="sent_msg">
-                      <p><?= $msj->mensaje ?><br><?=$msj->hora?></p>
+                      <p class="msj"><?= $msj->mensaje ?><br><?=$msj->hora,date('a')?></p>
                     
                     </div>
                   </div>
@@ -99,7 +99,7 @@
                   <!-- llenar datos  -->
                   <div class="received_withd_msg">
                     <div class="received_msg">
-                      <p><?= $msj->mensaje ?><br><?=$msj->hora?></p>
+                      <p><?= $msj->mensaje ?><br><?=$msj->hora,date('a')?></p>
                     </div>
                   </div>
                   <!-- fin llenar datos -->
@@ -115,14 +115,6 @@
       <div class="panel-escritura">
         <form class="textarea" method="POST" action="<?= base_url("mensaje/crearMensaje") ?>">
           <div class="opcines">
-            <a type="submit" class="btn btn-default">
-              <i class="far fa-smile">
-              </i>
-            </a>
-            <a type="submit" class="btn btn-default">
-              <i class="fas fa-paperclip">
-              </i>
-            </a>
           </div>
           <?php
           if (isset($contacto)) : ?>

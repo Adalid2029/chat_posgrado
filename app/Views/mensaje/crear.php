@@ -38,11 +38,7 @@
             <a class="nav-link" href="<?=base_url('/notification/listar')?>">Notificacion</a>
           </li>
         </ul>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item  'active' : null) ?>">
-            <a class="nav-link" href="<?=base_url('/usuario/administra')?>">administra</a>
-          </li>
-        </ul>
+        
       </div>
       </div>
     </nav>
@@ -62,25 +58,25 @@
                         <textarea id="mensaje"class="form-control" type="textarea"name="mensaje"placeholder="Escribe un mensaje aqui"></textarea>
                     </div> 
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label for="fecha">Fecha:</label>
                         <input id="fecha"value="" class="form-control" type="date" name="fecha">
                     </div> 
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label for="hora">Hora:</label>
                         <input id="hora"value="" class="form-control" type="time" name="hora">
                     </div> 
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label for="id_remitente">Remitente:</label>
                         <input id="id_remitente"class="form-control" type="text"name="id_remitente">
                     </div> 
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <label for="id_destinatario">Destinatario:</label>
                         <input id="id_destinatario"class="form-control" type="text"name="id_destinatario">

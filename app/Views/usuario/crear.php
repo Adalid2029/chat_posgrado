@@ -16,9 +16,6 @@
 <body>
     <header>
         <div class="template">
-            <a href="<?= base_url('/usuario/login'); ?>" class="btn btn-primary">Salir
-                <i class="icono fas fa-sign-in-alt"></i>
-            </a>
             <a href="<?= base_url('/usuario/crear'); ?>" class="btn btn-primary">Registrar
                 <i class="icono fas fa-user-alt"></i>
             </a>
@@ -74,25 +71,7 @@
                                     <label for="numero">Telefono:</label>
                                     <input id="numero" value="" class="form-control" type="number" name="numero" placeholder="Ingrese un numero">
                                 </div>
-                            </div>
-
-                            <?php if($session->tipo==1):?>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-linput" type="radio" name="tipo">
-                                        <label for="tipo">Admin</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-linput" type="radio" name="tipo">
-                                        <label for="tipo">usuario</label>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <?php endif?>
-                           
-                           
+                            </div>                           
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <button class="btn btn-primary" type="submit">Registrarse</button>

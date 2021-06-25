@@ -48,7 +48,9 @@ class Usuario extends BaseController
     {
         return view('/usuario/crear');
     }
-
+    private function hash_password($password){
+        return password_hash($password, PASSWORD_BCRYPT);
+     }     
     public function guardar()
     {
         $validacion=$this->validate([
@@ -81,7 +83,7 @@ class Usuario extends BaseController
                 [
                     'nombre' => $nombre,
                     'email' => $email,
-                    'password' => $password,
+                    'password' =>$password,
                     'tipo'=>$tipo,
                     'numero' => $telefono,
                   
