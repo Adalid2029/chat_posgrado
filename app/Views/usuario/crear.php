@@ -71,7 +71,8 @@
                                     <label for="numero">Telefono:</label>
                                     <input id="numero" value="" class="form-control" type="number" name="numero" placeholder="Ingrese un numero">
                                 </div>
-                            </div>                           
+                            </div>
+                                               
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <button class="btn btn-primary" type="submit">Registrarse</button>

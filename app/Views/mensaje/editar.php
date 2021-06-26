@@ -28,11 +28,7 @@
             </a>
           </li>
         </ul>
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('/usuario/home')?>">home</a>
-          </li>
-        </ul>
+        
         <ul class="navbar-nav my-2 my-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="<?= base_url('/usuario/listar')?>">Usuario</a>
@@ -49,11 +45,7 @@
             <a class="nav-link" href="<?=base_url('/notification/listar')?>">Notificacion</a>
           </li>
         </ul>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item  'active' : null) ?>">
-            <a class="nav-link" href="<?=base_url('/usuario/administra')?>">administra</a>
-          </li>
-        </ul>
+       
         
       
       </div>
@@ -76,30 +68,20 @@
                     <input id="mensaje" value="<?=$listar['mensaje']?>"class="form-control" type="text"name="mensaje">
                   </div> 
                   </div>
-                  <div class="col-sm-12">
+                  <div class="col-sm-6">
                   <div class="form-group">
                     <label for="fecha">Fecha:</label>
                     <input id="fecha"value="<?=$listar['fecha']?>" class="form-control" type="date" name="fecha">
                   </div> 
                   </div> 
-                  <div class="col-sm-12">
+                  <div class="col-sm-6">
                   <div class="form-group">
                       <label for="hora">Hora:</label>
                       <input id="hora"value="<?=$listar['hora']?>" class="form-control" type="time" name="hora">
                   </div> 
                   </div> 
-                  <div class="col-sm-12">
-                  <div class="form-group">
-                      <label for="id_remitente">Remitente:</label>
-                      <input id="id_remitente"value="<?=$listar['id_remitente']?>" class="form-control" type="text" name="id_remitente">
-                  </div> 
-                  </div> 
-                  <div class="col-sm-12">
-                  <div class="form-group">
-                      <label for="id_destinatario">Destinatario:</label>
-                      <input id="id_destinatario"value="<?=$listar['id_destinatario']?>" class="form-control" type="text" name="id_destinatario">
-                  </div> 
-                  </div> 
+                  
+                  
                   <div class="col-sm-12">
                   <div class="form-group">
                   <button class="btn btn-primary" type="submit">Actualizar</button>

@@ -25,7 +25,6 @@
             <img src="<?= base_url() ?>/public/icono1.jpg">
             <p><?= $session->nombre ?></p>
           </div>
-          
 
         </div>
       </div>

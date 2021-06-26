@@ -15,7 +15,7 @@
 					<th>Password</th>
 					<th>Numero</th>
 					<th>Tipo</th>
-		            <th>acciones</th>
+				    <th>acciones</th>
                 </tr>
             </thead>
 			<tbody>
@@ -30,7 +30,7 @@ foreach ($listar as $usuario):?>
 			<td> <?php echo $usuario->password;?></td>
 			<td> <?php echo $usuario->numero;?></td>
 			<td> <?php echo $usuario->tipo;?></td>
-
+			
 			<td> 
 			<a href="editar/<?php echo $usuario->_id?>"class="btn btn-warning" type="button">
 			<i class="fas fa-pencil-alt"style="color:#fff"></i>
